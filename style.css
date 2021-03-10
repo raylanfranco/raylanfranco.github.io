@@ -44,7 +44,7 @@ body img {
     width: 100%;
     height: 100%;
     z-index: 99999;
-    background-color: #4D4B4A
+    background-color: #141414
 }
 
 .doc-loader img {
@@ -72,7 +72,7 @@ p {
 a.button {
     display: inline-block;
     color: #faefff;
-    border: 2px solid #a69277;
+    border: 2px solid #E4E5E8;
     text-align: center;
     padding: 12px 38px;
     cursor: pointer;
@@ -88,13 +88,13 @@ a.button:active {
 
 a.button:hover {
     color: #fff;
-    background-color: #4D4B4A;
+    background-color: #141414;
 }
 
 .content-left {
     position: fixed;
     width: 380px;
-    background-color: #4D4B4A;
+    background-color: #141414;
     height: 100vh;
     z-index: 1
 }
@@ -215,7 +215,7 @@ a.button:hover {
     width: 25px;
     position: relative;
     height: 30px;
-    color: #a69277;
+    color: #E4E5E8;
 }
 
 .current-num span {
@@ -259,7 +259,7 @@ a.button:hover {
 .my-info-title {
     font-size: 12px;
     line-height: 100%;
-    color: #a69277;
+    color: #E4E5E8;
     letter-spacing: 5px
 }
 
@@ -284,7 +284,7 @@ img.my-info-signature {
 
 .current-big-num {
     font-size: 160px;
-    -webkit-text-stroke: 3px #a69277;
+    -webkit-text-stroke: 3px #E4E5E8;
     color: transparent;
     font-weight: 800;
     line-height: 100%;
@@ -305,7 +305,7 @@ img.my-info-signature {
     margin-left: -20px;
     bottom: 25px;
     margin-top: -35px;
-    box-shadow: inset 0 0 0 3px #a69277;
+    box-shadow: inset 0 0 0 3px #E4E5E8;
     border-radius: 25px;
     transition: right .5s
 }
@@ -314,7 +314,7 @@ img.my-info-signature {
     content: '';
     width: 8px;
     height: 8px;
-    background: #a69277;
+    background: #E4E5E8;
     margin-left: -4px;
     top: 8px;
     border-radius: 4px;
@@ -414,7 +414,7 @@ img.my-info-signature {
     display: block;
     width: 0;
     height: 16px;
-    background-color: #a69277;
+    background-color: #E4E5E8;
     transition: width .3s;
     position: absolute;
     left: -5%;
@@ -498,7 +498,7 @@ h2.section-title {
 
 .site-des {
     font-size: 28px;
-    color: #4D4B4A;
+    color: #141414;
 }
 
 h1.entry-title {
@@ -509,7 +509,7 @@ h1.entry-title {
 }
 
 .site-info {
-    color: #4D4B4A;
+    color: #141414;
     margin-top: 25px
 }
 
@@ -538,7 +538,7 @@ h1.entry-title {
 
 .service-holder {
     padding: 36px;
-    background-color: #4D4B4A;
+    background-color: #141414;
     width: 47%;
     margin-right: 6%;
     margin-bottom: 6%
@@ -552,7 +552,7 @@ h1.entry-title {
 .service-title {
     font-size: 28px;
     line-height: 42px;
-    color: #a69277;
+    color: #E4E5E8;
     font-weight: 700
 }
 
@@ -595,7 +595,7 @@ h1.entry-title {
 .category-filter-icon {
     width: 20px;
     height: 3px;
-    background-color: #a69277;
+    background-color: #E4E5E8;
     float: right;
     transition: width .3s ease
 }
@@ -609,7 +609,7 @@ h1.entry-title {
     display: block;
     width: 10px;
     height: 3px;
-    background-color: #a69277;
+    background-color: #E4E5E8;
     transform: translate(-5px, 8px);
     transition: transform .3s ease
 }
@@ -623,7 +623,7 @@ h1.entry-title {
     display: block;
     width: 10px;
     height: 3px;
-    background-color: #a69277;
+    background-color: #E4E5E8;
     transform: translate(10px, 11px);
     transition: transform .3s ease
 }
@@ -633,7 +633,7 @@ h1.entry-title {
 }
 
 .category-filter-list {
-    background-color: #4D4B4A;
+    background-color: #141414;
     padding: 24px 20px;
     width: 110px;
     display: none;
@@ -654,7 +654,7 @@ h1.entry-title {
 }
 
 .category-filter-list .button.is-checked {
-    color: #a69277;
+    color: #E4E5E8;
 }
 
 .isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition {
@@ -718,7 +718,7 @@ h1.entry-title {
     top: 0;
     z-index: 1;
     font-size: 20px;
-    background-color: #4D4B4A;
+    background-color: #141414;
     padding: 20px;
     transform: translateX(-100%);
     transition: transform .3s ease
@@ -746,7 +746,7 @@ h1.entry-title {
     font-size: 28px;
     line-height: 100%;
     font-weight: 700;
-    color: #a69277;
+    color: #E4E5E8;
     margin-bottom: 0;
     padding-bottom: 5px
 }
@@ -797,7 +797,7 @@ h1.entry-title {
     width: 70px;
     height: 70px;
     display: inline-block;
-    background-color: #a69277;
+    background-color: #E4E5E8;
     border-radius: 5px;
     margin-bottom: 20px;
     background-size: 70px;
@@ -948,7 +948,7 @@ div.pp_default .pp_description {
 }
 
 .owl-theme .owl-dots .owl-dot.active span {
-    background-color: #a69277
+    background-color: #E4E5E8
 }
 
 ul.timeline-holder {
@@ -973,7 +973,7 @@ li.timeline-event:before {
     width: 3px;
     height: calc(100% - 20px);
     position: absolute;
-    background-color: #a69277;
+    background-color: #E4E5E8;
     left: -30px;
     top: 51px
 }
@@ -994,7 +994,7 @@ li.timeline-event span.timeline-circle:after {
     left: -8px;
     top: 11px;
     border-radius: 90%;
-    background-color: #a69277;
+    background-color: #E4E5E8;
     opacity: 0;
     transition: opacity .3s
 }
@@ -1015,7 +1015,7 @@ span.timeline-circle:before {
     width: 35px;
     height: 35px;
     border-radius: 90%;
-    border: 3px solid #a69277;
+    border: 3px solid #E4E5E8;
     position: absolute;
     left: -16px;
     top: 3px;
@@ -1028,7 +1028,7 @@ span.timeline-circle:before {
     left: -115px;
     top: 2px;
     transition: .3s;
-    color: #a69277;
+    color: #E4E5E8;
     font-weight: 700
 }
 
@@ -1071,13 +1071,13 @@ span.skill-circle-num {
     transform: translate(-50%, -50%);
     font-size: 45px;
     font-weight: 700;
-    color: #a69277;
+    color: #E4E5E8;
     letter-spacing: -1px
 }
 
 p.skill-circle-text {
     font-size: 22px;
-    color: #a69277;
+    color: #E4E5E8;
     text-align: center;
     padding-top: 20px;
     letter-spacing: -1px;
@@ -1109,14 +1109,14 @@ p.skill-circle-text {
     font-weight: 700;
     width: 100px;
     float: right;
-    color: #a69277;
+    color: #E4E5E8;
     letter-spacing: -1px
 }
 
 .skill {
     width: 100%;
     height: 12px;
-    background-color: #4D4B4A;
+    background-color: #141414;
     margin-bottom: 15px
 }
 
@@ -1129,7 +1129,7 @@ p.skill-circle-text {
 .skill-fill {
     width: 10%;
     height: 22px;
-    background-color: #a69277;
+    background-color: #E4E5E8;
     transform: translateY(-5px);
     transition: width .7s
 }
@@ -1141,7 +1141,7 @@ p.skill-circle-text {
 
 .contact-form {
     padding: 65px;
-    background-color: #a69277;
+    background-color: #E4E5E8;
 }
 
 .contact-form p {
