@@ -493,7 +493,7 @@ h2.section-title {
     background-image: url("images/home.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right;
+    background-position: top;
 }
 
 .site-des {
