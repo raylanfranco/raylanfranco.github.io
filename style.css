@@ -1461,6 +1461,10 @@ p.contact-submit-holder {
     li.timeline-event {
         margin-bottom: 30px
     }
+
+    body.open .content-left {
+        z-index: 9999
+    }
 }
 
 @media screen and (max-height: 880px) {
@@ -1622,6 +1626,86 @@ p.contact-submit-holder {
     }
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) {
+    a.button {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 15px
+    }
+
+    a.button + a.button {
+        margin-left: 0
+    }
+
+    a.button:last-child {
+        margin-bottom: 0
+    }
+
+    .grid-sizer, .grid-item {
+        width: 50% !important
+    }
+
+    .grid-item.p-one-third {
+        width: 50% !important
+    }
+
+    .services-wrapper {
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    .service-holder {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px
+    }
+
+    .service-holder:last-child {
+        margin-bottom: 0
+    }
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1366px) and (orientation: landscape) {
+    a.button {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 15px
+    }
+
+    a.button + a.button {
+        margin-left: 0
+    }
+
+    a.button:last-child {
+        margin-bottom: 0
+    }
+
+    .grid-sizer, .grid-item {
+        width: 50% !important
+    }
+
+    .grid-item.p-one-third {
+        width: 50% !important
+    }
+
+    .services-wrapper {
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    .service-holder {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px
+    }
+
+    .service-holder:last-child {
+        margin-bottom: 0
+    }
+}
+
 @media screen and (max-width: 650px) {
     a.button {
         display: block;
@@ -1652,7 +1736,6 @@ p.contact-submit-holder {
     }
 }
 
-/* Navigation Texture Background */
 .nav-texture {
     opacity: 0.3;
     mix-blend-mode: difference;
@@ -1667,7 +1750,6 @@ p.contact-submit-holder {
     z-index: 0;
 }
 
-/* Home Section Styling */
 #home .section-wrapper {
     background-color: #3e3d32;
     position: relative;
@@ -1743,7 +1825,6 @@ p.contact-submit-holder {
     }
 }
 
-/* Gold Theme Color Overrides */
 .icon-scroll:before {
     background: #F5E1C0;
 }
@@ -1776,7 +1857,6 @@ p.contact-submit-holder {
     width: 110%;
 }
 
-/* Email Link Inverted Colors */
 .my-info-content a {
     color: #F5E1C0;
     transition: color .3s linear;
@@ -1786,7 +1866,6 @@ p.contact-submit-holder {
     color: #ffffff;
 }
 
-/* Typography System */
 h1, h2, h3, h4, h5, h6,
 .entry-title,
 .section-title,
