@@ -1622,11 +1622,33 @@ p.contact-submit-holder {
     }
 }
 
+@media screen and (max-width: 650px) {
+    a.button {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 15px
+    }
+
+    a.button + a.button {
+        margin-left: 0
+    }
+
+    a.button:last-child {
+        margin-bottom: 0
+    }
+}
+
 @media screen and (max-width: 480px) {
     .button-group-wrapper > .button {
         display: table;
         margin-left: 0;
         margin-bottom: 20px
+    }
+
+    a.button {
+        padding: 10px 20px;
+        font-size: 14px
     }
 }
 
