@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(identify:*)",
+      "Bash(for:*)",
+      "Bash(do sed -i \"s|<div class=\"\"content-left\"\">|<div class=\"\"content-left\"\">\\n        <div class=\"\"nav-texture\"\"></div>|\" \"$file\")",
+      "Bash(done)",
+      "Bash(do sed -i \"s|<link href=''https://fonts.googleapis.com/css?family=Poppins:400,700,800'' rel=''stylesheet'' type=''text/css''>|<link href=''https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900\\&family=Playfair+Display:wght@400;500;600;700;800;900\\&display=swap'' rel=''stylesheet'' type=''text/css''>|\" \"$file\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
