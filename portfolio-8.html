@@ -1,0 +1,354 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <title>Ray Lanfranco - Software Engineer</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Ray Lanfranco - Software Engineer"/>
+    <meta name="author" content="Ray Lanfranco"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link href='https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href='style.css'/>
+    <!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        /* Before/After Slider Styles */
+        .before-after-slider {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+
+        .before-after-slider .before-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 2;
+        }
+
+        .before-after-slider .before-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: auto;
+            height: 100%;
+            max-width: none;
+        }
+
+        .before-after-slider .after-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .before-after-slider .after-container video {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .before-after-slider .slider-handle {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 4px;
+            height: 100%;
+            background: #BA9731;
+            cursor: ew-resize;
+            z-index: 3;
+            transform: translateX(-50%);
+        }
+
+        .before-after-slider .slider-handle::before,
+        .before-after-slider .slider-handle::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 0;
+            height: 0;
+            border-style: solid;
+        }
+
+        .before-after-slider .slider-handle::before {
+            left: -12px;
+            transform: translateY(-50%);
+            border-width: 10px 10px 10px 0;
+            border-color: transparent #BA9731 transparent transparent;
+        }
+
+        .before-after-slider .slider-handle::after {
+            right: -12px;
+            transform: translateY(-50%);
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent #BA9731;
+        }
+
+        .before-after-slider .slider-handle-circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 44px;
+            height: 44px;
+            background: #BA9731;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .before-after-slider .slider-handle-circle::before,
+        .before-after-slider .slider-handle-circle::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+        }
+
+        .before-after-slider .slider-handle-circle::before {
+            border-width: 6px 8px 6px 0;
+            border-color: transparent #141414 transparent transparent;
+            margin-right: 4px;
+        }
+
+        .before-after-slider .slider-handle-circle::after {
+            border-width: 6px 0 6px 8px;
+            border-color: transparent transparent transparent #141414;
+            margin-left: 4px;
+        }
+
+        .before-after-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 12px;
+            color: #BA9731;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Gallery Grid */
+        .portfolio-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .portfolio-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-gallery img:hover {
+            transform: scale(1.02);
+        }
+
+        @media screen and (max-width: 767px) {
+            .portfolio-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="single-portfolio">
+
+<div class="doc-loader"></div>
+<div id="content" class="site-content">
+    <div class="content-left">
+        <div class="nav-texture"></div>
+        <div class="content-left-wrapper">
+            <header>
+                <div class="toggle-holder">
+                    <div id="toggle">
+                        <div class="menu-line"></div>
+                    </div>
+                </div>
+                <div class="top-pagination">
+                    <div class="current-num">
+                        <span>01</span>
+                    </div>
+                    <div class="pagination-div"></div>
+                    <div class="total-pages-num"></div>
+                </div>
+                <div class="menu-holder">
+                    <div class="menu-wrapper relative">
+                        <nav id="header-main-menu">
+                            <ul class="main-menu sm sm-clean">
+                                <li><a href="index.html#home">Home</a></li>
+                                <li><a href="index.html#service">Service</a></li>
+                                <li><a href="index.html#portfolio">Portfolio</a></li>
+                                <li><a href="index.html#resume">Resume</a></li>
+                                <li><a href="index.html#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                    <div class="my-info-wrapper">
+                            <div class="my-info">
+                                    <p class="my-info-title">NAME</p>
+                                    <p class="my-info-content">Ray Lanfranco</p>
+                            </div>
+                            <div class="my-info">
+                                    <p class="my-info-title">ROLE</p>
+                                    <p class="my-info-content">Software Engineer</p>
+                            </div>
+                            <div class="my-info">
+                                    <p class="my-info-title">EMAIL</p>
+                                    <p class="my-info-content"><a href="mailto:inquiries@raylanfran.co" class="__cf_email__"
+                                                                  data-cfemail="f78483989992b7928f969a879b92d994989a">inquiries@raylanfran.co</a>
+                                    </p>
+                            </div>
+                            <div class="my-info">
+                                    <p class="my-info-title">PHONE</p>
+                                    <p class="my-info-content">(929) 373-2143</p>
+                            </div>
+                            <img class="my-info-signature" src="images/signature.png" alt=""/>
+                    </div>
+                    <div class="big-num">
+                            <div class="current-big-num">01</div>
+                            <div class="icon-scroll"></div>
+                    </div>
+            </header>
+        </div>
+    </div>
+    <div class="content-right">
+        <div class="content-right-wrapper">
+            <div class="section">
+                <div class="section-wrapper block">
+                    <div class="portfolio-item-wrapper center-relative">
+                        <div class="portfolio-content">
+                            <div class="row">
+                                <div class="one-half width-55">
+                                    <!-- Before/After Slider -->
+                                    <div class="before-after-slider" id="beforeAfterSlider">
+                                        <div class="before-container">
+                                            <img src="images/body2.0/before.png" alt="Body 2.0 Before">
+                                        </div>
+                                        <div class="after-container">
+                                            <video autoplay loop muted playsinline>
+                                                <source src="images/body2.0/after.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </div>
+                                        <div class="slider-handle">
+                                            <div class="slider-handle-circle"></div>
+                                        </div>
+                                    </div>
+                                    <div class="before-after-labels">
+                                        <span>Before</span>
+                                        <span>After</span>
+                                    </div>
+
+                                    <!-- Additional Gallery Images -->
+                                    <div class="portfolio-gallery">
+                                        <img src="images/body2.0/dashboard.png" alt="Body 2.0 Dashboard">
+                                        <img src="images/body2.0/login.png" alt="Body 2.0 Login">
+                                        <img src="images/body2.0/settings.png" alt="Body 2.0 Settings">
+                                    </div>
+                                </div>
+                                <div class="one-half width-40 last">
+                                    <h2 class="entry-title section-title">Body 2.0</h2>
+                                    <p class="section-info">
+                                        Full-System Redesign & Admin Panel Expansion
+                                    </p>
+                                    <p>
+                                        Body 2.0 is a complete rebuild of the original Metamorphosis prototype — redesigned from the front end to the internal architecture. The project includes a polished, conversion-ready public interface and a fully featured admin panel for fitness data, workout templates, user management, and real-time tracking.
+                                    </p>
+                                    <p>
+                                        The focus was on improving clarity, performance, and maintainability. Every section was rebuilt with modular React components, consistent typography, and a clean visual hierarchy. The admin dashboard introduces structured CRUD flows, protected routes, role-based views, and a more scalable backend data model.
+                                    </p>
+                                    <p>
+                                        Body 2.0 represents my approach to engineering: elegant interfaces backed by systems that can grow.
+                                    </p>
+                                    <p>
+                                        <a class="button" href="index.html#portfolio">Back to Portfolio</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src='js/imagesloaded.pkgd.js'></script>
+<script src='js/jquery.prettyPhoto.js'></script>
+<script src='js/isotope.pkgd.js'></script>
+<script src='js/jquery.smartmenus.min.js'></script>
+<script src='js/owl.carousel.min.js'></script>
+<script src='js/circle-progress.min.js'></script>
+<script src='js/main.js'></script>
+
+<script>
+// Before/After Slider Functionality
+(function() {
+    const slider = document.getElementById('beforeAfterSlider');
+    if (!slider) return;
+
+    const beforeContainer = slider.querySelector('.before-container');
+    const handle = slider.querySelector('.slider-handle');
+    let isDragging = false;
+
+    function updateSliderPosition(x) {
+        const rect = slider.getBoundingClientRect();
+        let position = (x - rect.left) / rect.width;
+        position = Math.max(0, Math.min(1, position));
+
+        const percentage = position * 100;
+        beforeContainer.style.width = percentage + '%';
+        handle.style.left = percentage + '%';
+    }
+
+    // Mouse events
+    handle.addEventListener('mousedown', function(e) {
+        isDragging = true;
+        e.preventDefault();
+    });
+
+    document.addEventListener('mousemove', function(e) {
+        if (!isDragging) return;
+        updateSliderPosition(e.clientX);
+    });
+
+    document.addEventListener('mouseup', function() {
+        isDragging = false;
+    });
+
+    // Touch events
+    handle.addEventListener('touchstart', function(e) {
+        isDragging = true;
+        e.preventDefault();
+    });
+
+    document.addEventListener('touchmove', function(e) {
+        if (!isDragging) return;
+        updateSliderPosition(e.touches[0].clientX);
+    });
+
+    document.addEventListener('touchend', function() {
+        isDragging = false;
+    });
+
+    // Click on slider to jump to position
+    slider.addEventListener('click', function(e) {
+        if (e.target === handle || handle.contains(e.target)) return;
+        updateSliderPosition(e.clientX);
+    });
+})();
+</script>
+</body>
+</html>
